@@ -1,5 +1,6 @@
-import app from './server.js';
+const app = require('./server');
 
-export default function handler(req, res) {
+// IMPORTANT: wrap Express for Vercel serverless
+module.exports = (req, res) => {
   return app(req, res);
-}
+};
