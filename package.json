@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Air Passenger Protection Regulations Guide with Google Drive evidence storage",
   "scripts": {
-    "dev": "concurrently \"vite\" \"node api/server.js\"",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
