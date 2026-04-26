@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from "react";
-import { useDrive } from "./useDrive.js";
+import { useDrive } from "./useDrive.jsx";
 
 /* ─────────────────────────────────────────────────────────────
    STYLES
