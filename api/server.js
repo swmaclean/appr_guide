@@ -260,11 +260,4 @@ app.get('/api/drive/files', requireAuth, async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
-
-// ─── Start server (local dev only — Vercel uses serverless) ───
-if (require.main === module) {
-  const PORT = process.env.PORT || 3001;
-  app.listen(PORT, () => console.log(`APPR API running on http://localhost:${PORT}`));
-}
-
 module.exports = app;
